@@ -1,1 +1,204 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+
+/*projects*/
+
+.projects-top,
+.partners-top,
+.products-top {
+    margin: 50px 0;
+}
+
+.projects-top hr,
+.products-top hr,
+.partners-top hr {
+    background-color: lightgray;
+    height: 2px;
+    width: 100%;
+}
+
+.projects .card {
+    border: none;
+    cursor: pointer;
+}
+
+.projects .card:hover .card-img-top {
+    filter: opacity(30%);
+}
+
+.projects .card p {
+    font-weight: bold;
+}
+
+.projects .card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.projects button {
+    border: 2px solid #0F7633;
+    margin-bottom: 50px;
+}
+
+
+/*products*/
+
+.products {
+    background-color: #F7FCFF;
+}
+
+.products .products-top {
+    padding: 50px 0;
+}
+
+.products .card {
+    background-color: #EEEEEE;
+    text-align: center;
+    padding: 50px 0 40px 0;
+    border: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.products .card img {
+    width: 50%;
+    margin: 0 auto 50px auto;
+    cursor: pointer;
+}
+
+.products .card a {
+    background-color: #E5E5E5;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.products .card-title {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.products .btn-group {
+    margin-top: 10px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.products .btn-group:hover button {
+    background-color: #333333;
+}
+
+.products .btn-group button {
+    background-color: #97D700;
+    border: none;
+}
+
+.products .btn-group button:first-child {
+    box-shadow: 10px 0 5px -5px black;
+}
+
+.products .btn-group button:last-child {
+    text-align: left;
+    width: 90%;
+}
+
+.projects .text-center button,
+.products .text-center button {
+    margin-bottom: 50px;
+    position: relative;
+    border: transparent;
+}
+
+.projects .text-center button::after,
+.products .text-center button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-right-color: #0F7633;
+    border-top-color: #0F7633;
+}
+
+.projects .text-center button:hover::after,
+.products .text-center button:hover::after {
+    animation: ButtonAnimation 2s forwards;
+}
+
+@keyframes ButtonAnimation {
+    50% {
+        height: 0;
+        width: 100%;
+        border-right-color: transparent;
+        border-top-color: #0F7633;
+    }
+    100% {
+        height: 0;
+        width: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+    }
+}
+
+.projects .text-center button::before,
+.products .text-center button::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-left-color: #0F7633;
+    border-bottom-color: #0F7633;
+}
+
+.projects .text-center button:hover::before,
+.products .text-center button:hover::before {
+    animation: ButtonAnimation2 2s forwards;
+}
+
+@keyframes ButtonAnimation2 {
+    50% {
+        height: 0;
+        width: 100%;
+        border-left-color: transparent;
+        border-bottom-color: #0F7633;
+    }
+    100% {
+        height: 0;
+        width: 0;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+    }
+}
+
+
+/*partners*/
+
+.partners {
+    margin-bottom: 100px;
+}
+
+.partners .partners-row div img {
+    border: 1px solid lightgray;
+    width: 90%;
+    height: 110px;
+    cursor: pointer;
+}
+
+.partners .partners-row div {
+    padding: 0;
+    height: 150px;
+}
+
+@media (min-width:768px) {
+    .partners .partners-row:nth-child(3) div:nth-child(odd),
+    .partners .partners-row:nth-child(4) div:nth-child(odd) {
+        padding-top: 25px;
+    }
+    .partners .partners-row:nth-child(2) div:nth-child(even) {
+        padding-top: 30px;
+    }
+}

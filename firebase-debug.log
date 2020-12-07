@@ -1,0 +1,229 @@
+[debug] [2020-09-19T14:46:05.568Z] ----------------------------------------------------------------------
+[debug] [2020-09-19T14:46:05.571Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\abdul\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-19T14:46:05.571Z] CLI Version:   8.10.0
+[debug] [2020-09-19T14:46:05.571Z] Platform:      win32
+[debug] [2020-09-19T14:46:05.571Z] Node Version:  v12.18.2
+[debug] [2020-09-19T14:46:05.573Z] Time:          Sat Sep 19 2020 18:46:05 GMT+0400 (Azerbaijan Standard Time)
+[debug] [2020-09-19T14:46:05.573Z] ----------------------------------------------------------------------
+[debug] [2020-09-19T14:46:05.573Z] 
+[debug] [2020-09-19T14:46:05.583Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-19T14:46:05.584Z] > authorizing via signed-in user
+[debug] [2020-09-19T14:46:05.584Z] [iam] checking project golden-52327 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-09-19T14:46:05.589Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/golden-52327:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-09-19T14:46:07.007Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Sep 2020 14:46:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=622","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-19T14:46:07.014Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/golden-52327  
+ 
+[debug] [2020-09-19T14:46:07.565Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Sep 2020 14:46:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'golden-52327'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-09-19T14:46:07.585Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/golden-52327/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-09-19T14:46:10.470Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Sep 2020 14:46:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[golden-52327]: beginning deploy... 
+[info] i  hosting[golden-52327]: found 77 files in dist/nape 
+[debug] [2020-09-19T14:46:10.646Z] [hosting] hash cache [ZGlzdFxuYXBl] not populated
+[debug] [2020-09-19T14:46:11.371Z] [hosting] hash cache [ZGlzdFxuYXBl] stored for 77 files
+[debug] [2020-09-19T14:46:11.371Z] [hosting][hash queue][FINAL] {"max":698,"min":54,"avg":237.2987012987013,"active":0,"complete":77,"success":77,"errored":0,"retried":0,"total":77,"elapsed":724}
+[debug] [2020-09-19T14:46:11.371Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/golden-52327/versions/2a7c0120357ea80f:populateFiles  
+ <request body omitted>
+[debug] [2020-09-19T14:46:12.932Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Sep 2020 14:46:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-19T14:46:13.008Z] [hosting][populate queue][FINAL] {"max":1579,"min":1579,"avg":1579,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1640}
+[debug] [2020-09-19T14:46:13.008Z] [hosting] uploads queued: 74
+[debug] [2020-09-19T14:46:24.115Z] [uploadQueue] Retrying task 0fec408a93151d60bd935d96d83cfb107f2ae1c4b854bfffc66d6dc4cba0a935
+[debug] [2020-09-19T14:46:24.119Z] [uploadQueue] Retrying task a14433100065914c795eb1a782f97fbcf183c10dd843d4df06c5a2cb1c4c44c1
+[debug] [2020-09-19T14:46:24.171Z] [uploadQueue] Retrying task 4a1a7b8f879779088978ee3189e8a3269fe185ebdee45b7ab13c91239c07e20d
+[debug] [2020-09-19T14:46:24.195Z] [uploadQueue] Retrying task 9def35ddac16e2a5b3713c132e62387e6aa77df933798d63d67055a4d8c5d603
+[debug] [2020-09-19T14:46:24.202Z] [uploadQueue] Retrying task c67e043a67be12578b10c9742f67149a3c04fba44365ee887d052383ed7b15b9
+[debug] [2020-09-19T14:46:24.204Z] [uploadQueue] Retrying task bccea8e3047fe57867850b3fde69457875e06a5891aa90a0118a5479589e7ba3
+[debug] [2020-09-19T14:46:24.206Z] [uploadQueue] Retrying task 76e477d6538ea415fb14bea830d30a07851b9a0ecfe3912ed342b3e0710b545c
+[debug] [2020-09-19T14:46:24.210Z] [uploadQueue] Retrying task 0c1c6574d4d0a54db059e119158d40b60a2081d6313951f428f04bc9520fbc5e
+[debug] [2020-09-19T14:46:24.212Z] [uploadQueue] Retrying task 38d88317bebc79b4945a679daadd47daebbadc5cd13b41473143394ca7e8d892
+[debug] [2020-09-19T14:46:24.216Z] [uploadQueue] Retrying task ae51c3b024c03880dd615206125d0bca377507597a1aca72530f37e028593f78
+[debug] [2020-09-19T14:46:24.267Z] [uploadQueue] Retrying task adcf8ae91038c0482b693290f86db3d41ced960de8e73c356af4b583d652df45
+[debug] [2020-09-19T14:46:24.269Z] [uploadQueue] Retrying task 41f7c3ad3409f3e4af02e065a5b9845d06b3f7f1c3a3184a4cce6ca1148733f1
+[debug] [2020-09-19T14:46:24.455Z] [uploadQueue] Retrying task 149843b87dbb63a3682f57a06df3938a7406be9fc207f870e3b56284373f2621
+[debug] [2020-09-19T14:46:24.457Z] [uploadQueue] Retrying task 151d3e94c24cadf06995694cabdfa6fade6c327397316f218cb72ba2b3f78cbd
+[debug] [2020-09-19T14:46:24.460Z] [uploadQueue] Retrying task b51c2c79cce89b7c5947672c13f735c24ee1a9f8f6ebdb957c5fdfe567f27d37
+[debug] [2020-09-19T14:46:43.861Z] [uploadQueue] Retrying task e458dd15ac1f16e15e7adb94f370642dd662e6c64c77aaf082ad9da0ffd8f36f
+[debug] [2020-09-19T14:46:44.099Z] [uploadQueue] Retrying task 1a63ad8aaa622a7ced9447208f53b55e73a2b79c590f1e66a3222af6b0c7b03f
+[debug] [2020-09-19T14:46:44.119Z] [uploadQueue] Retrying task 4ba8467413d4a37940180fb64fafc14a352da12d06015a41deff13042f19c46e
+[debug] [2020-09-19T14:46:44.147Z] [uploadQueue] Retrying task 3b2f97b6c77d946cd8e371f2323eab1d43fbfb812e0501a5567ae355bb243222
+[debug] [2020-09-19T14:46:44.167Z] [uploadQueue] Retrying task 9df9a5295b5ff9babe8b3dcb1f0f14baaf5767195e83967bc25dd4212d6761a4
+[debug] [2020-09-19T14:46:44.173Z] [uploadQueue] Retrying task a167a36ef463487d09f9d459cce3f42ee180812ea2838f732088c65f8199d6d3
+[debug] [2020-09-19T14:46:44.600Z] [uploadQueue] Retrying task d50a4a993a163bb812e5103e19bad4aca22772c12e983eb4cec342af0fb42470
+[debug] [2020-09-19T14:46:44.602Z] [uploadQueue] Retrying task c07d7df4155648305426f03d65f191f1b10d361d260a1508d9aee7a23ad876ef
+[debug] [2020-09-19T14:46:44.605Z] [uploadQueue] Retrying task 3f69a87ea353450a95aac3732a8a9a6ac3128635aa99f44d191b4b70a56ba84f
+[debug] [2020-09-19T14:46:44.608Z] [uploadQueue] Retrying task ac35d6cf7d46287bd8c47861cc0ace62bf58723ad9860781a6659164d68f6140
+[debug] [2020-09-19T14:46:44.610Z] [uploadQueue] Retrying task 1fee1161c7ba09a721430eb9dc7c370afd654a33a96dd3ad3534c578fe7154b4
+[debug] [2020-09-19T14:47:04.123Z] [uploadQueue] Retrying task 0fec408a93151d60bd935d96d83cfb107f2ae1c4b854bfffc66d6dc4cba0a935
+[debug] [2020-09-19T14:47:04.125Z] [uploadQueue] Retrying task a14433100065914c795eb1a782f97fbcf183c10dd843d4df06c5a2cb1c4c44c1
+[debug] [2020-09-19T14:47:04.129Z] [uploadQueue] Retrying task 9def35ddac16e2a5b3713c132e62387e6aa77df933798d63d67055a4d8c5d603
+[debug] [2020-09-19T14:47:04.131Z] [uploadQueue] Retrying task 4a1a7b8f879779088978ee3189e8a3269fe185ebdee45b7ab13c91239c07e20d
+[debug] [2020-09-19T14:47:04.134Z] [uploadQueue] Retrying task 76e477d6538ea415fb14bea830d30a07851b9a0ecfe3912ed342b3e0710b545c
+[debug] [2020-09-19T14:47:04.136Z] [uploadQueue] Retrying task c67e043a67be12578b10c9742f67149a3c04fba44365ee887d052383ed7b15b9
+[debug] [2020-09-19T14:47:04.137Z] [uploadQueue] Retrying task 38d88317bebc79b4945a679daadd47daebbadc5cd13b41473143394ca7e8d892
+[debug] [2020-09-19T14:47:04.138Z] [uploadQueue] Retrying task 0c1c6574d4d0a54db059e119158d40b60a2081d6313951f428f04bc9520fbc5e
+[debug] [2020-09-19T14:47:04.141Z] [uploadQueue] Retrying task ae51c3b024c03880dd615206125d0bca377507597a1aca72530f37e028593f78
+[debug] [2020-09-19T14:47:04.143Z] [uploadQueue] Retrying task adcf8ae91038c0482b693290f86db3d41ced960de8e73c356af4b583d652df45
+[debug] [2020-09-19T14:47:04.145Z] [uploadQueue] Retrying task bccea8e3047fe57867850b3fde69457875e06a5891aa90a0118a5479589e7ba3
+[debug] [2020-09-19T14:47:04.147Z] [uploadQueue] Retrying task 41f7c3ad3409f3e4af02e065a5b9845d06b3f7f1c3a3184a4cce6ca1148733f1
+[debug] [2020-09-19T14:47:04.148Z] [uploadQueue] Retrying task 151d3e94c24cadf06995694cabdfa6fade6c327397316f218cb72ba2b3f78cbd
+[debug] [2020-09-19T14:47:04.156Z] [uploadQueue] Retrying task b51c2c79cce89b7c5947672c13f735c24ee1a9f8f6ebdb957c5fdfe567f27d37
+[debug] [2020-09-19T14:47:04.196Z] [uploadQueue] Retrying task 149843b87dbb63a3682f57a06df3938a7406be9fc207f870e3b56284373f2621
+[debug] [2020-09-19T14:47:05.940Z] [uploadQueue] Retrying task 4ba8467413d4a37940180fb64fafc14a352da12d06015a41deff13042f19c46e
+[debug] [2020-09-19T14:47:08.565Z] [uploadQueue] Retrying task b1f3d4eaffa3a21bb4683b4b3e494ba76c820a78da6f471e2d66521999fbbb40
+[debug] [2020-09-19T14:47:11.023Z] [uploadQueue] Retrying task 08790bfe335b942a2402e34ae0d2969f6fba38f8a21cd64d0f21ecdd74f58246
+[debug] [2020-09-19T14:47:14.029Z] [uploadQueue] Retrying task c75fb0c9bd9a8549b6fae15b9dbb01ce3cd801e1fa6d5505859c042ee8be7f76
+[debug] [2020-09-19T14:47:14.491Z] [uploadQueue] Retrying task 9b74ca5333a9ca156ae6ef0920d5bc42d283e95d25651bf4375404f0407a63ab
+[debug] [2020-09-19T14:47:17.589Z] [uploadQueue] Retrying task f72816c2789c87b21c830f20cb2d9800951fd4aa8c1dd80483e98af0623b20d3
+[debug] [2020-09-19T14:47:18.267Z] [uploadQueue] Retrying task f14f30f499da5464c15b09c3e5590c5980c894a2e21f6ae9fd10ce91448ebbfe
+[debug] [2020-09-19T14:47:23.449Z] [uploadQueue] Retrying task eabf37574b2515b432f0119a166df43f92e4be6eee7a1142204577984c7cd269
+[debug] [2020-09-19T14:47:24.047Z] [uploadQueue] Retrying task e458dd15ac1f16e15e7adb94f370642dd662e6c64c77aaf082ad9da0ffd8f36f
+[debug] [2020-09-19T14:47:24.199Z] [uploadQueue] Retrying task d50a4a993a163bb812e5103e19bad4aca22772c12e983eb4cec342af0fb42470
+[debug] [2020-09-19T14:47:24.205Z] [uploadQueue] Retrying task 3f69a87ea353450a95aac3732a8a9a6ac3128635aa99f44d191b4b70a56ba84f
+[debug] [2020-09-19T14:47:24.208Z] [uploadQueue] Retrying task ac35d6cf7d46287bd8c47861cc0ace62bf58723ad9860781a6659164d68f6140
+[debug] [2020-09-19T14:47:24.210Z] [uploadQueue] Retrying task c07d7df4155648305426f03d65f191f1b10d361d260a1508d9aee7a23ad876ef
+[debug] [2020-09-19T14:47:24.216Z] [uploadQueue] Retrying task 1fee1161c7ba09a721430eb9dc7c370afd654a33a96dd3ad3534c578fe7154b4
+[debug] [2020-09-19T14:47:24.448Z] [uploadQueue] Retrying task 594c3916e70c1bb0da59ffca25acd686013593da9cfad9c1af700a9eaa810141
+[debug] [2020-09-19T14:47:24.968Z] [uploadQueue] Retrying task b7cf8e15b1d1279ecce06c7ca47bd0ea66009ac7fbea1bdb5c83d3c1f354c6c8
+[debug] [2020-09-19T14:47:24.970Z] [uploadQueue] Retrying task 9df9a5295b5ff9babe8b3dcb1f0f14baaf5767195e83967bc25dd4212d6761a4
+[debug] [2020-09-19T14:47:24.973Z] [uploadQueue] Retrying task 1a63ad8aaa622a7ced9447208f53b55e73a2b79c590f1e66a3222af6b0c7b03f
+[debug] [2020-09-19T14:47:24.976Z] [uploadQueue] Retrying task a167a36ef463487d09f9d459cce3f42ee180812ea2838f732088c65f8199d6d3
+[debug] [2020-09-19T14:47:24.979Z] [uploadQueue] Retrying task 3b2f97b6c77d946cd8e371f2323eab1d43fbfb812e0501a5567ae355bb243222
+[debug] [2020-09-19T14:47:26.747Z] [uploadQueue] Retrying task a14433100065914c795eb1a782f97fbcf183c10dd843d4df06c5a2cb1c4c44c1
+[debug] [2020-09-19T14:47:26.754Z] [uploadQueue] Retrying task 0fec408a93151d60bd935d96d83cfb107f2ae1c4b854bfffc66d6dc4cba0a935
+[debug] [2020-09-19T14:47:26.771Z] [uploadQueue] Retrying task 9def35ddac16e2a5b3713c132e62387e6aa77df933798d63d67055a4d8c5d603
+[debug] [2020-09-19T14:47:26.787Z] [uploadQueue] Retrying task 4a1a7b8f879779088978ee3189e8a3269fe185ebdee45b7ab13c91239c07e20d
+[debug] [2020-09-19T14:47:26.790Z] [uploadQueue] Retrying task 76e477d6538ea415fb14bea830d30a07851b9a0ecfe3912ed342b3e0710b545c
+[debug] [2020-09-19T14:47:26.793Z] [uploadQueue] Retrying task 38d88317bebc79b4945a679daadd47daebbadc5cd13b41473143394ca7e8d892
+[debug] [2020-09-19T14:47:26.798Z] [uploadQueue] Retrying task c67e043a67be12578b10c9742f67149a3c04fba44365ee887d052383ed7b15b9
+[debug] [2020-09-19T14:47:26.803Z] [uploadQueue] Retrying task 0c1c6574d4d0a54db059e119158d40b60a2081d6313951f428f04bc9520fbc5e
+[debug] [2020-09-19T14:47:26.816Z] [uploadQueue] Retrying task ae51c3b024c03880dd615206125d0bca377507597a1aca72530f37e028593f78
+[debug] [2020-09-19T14:47:26.819Z] [uploadQueue] Retrying task 151d3e94c24cadf06995694cabdfa6fade6c327397316f218cb72ba2b3f78cbd
+[debug] [2020-09-19T14:47:26.821Z] [uploadQueue] Retrying task b51c2c79cce89b7c5947672c13f735c24ee1a9f8f6ebdb957c5fdfe567f27d37
+[debug] [2020-09-19T14:47:26.826Z] [uploadQueue] Retrying task bccea8e3047fe57867850b3fde69457875e06a5891aa90a0118a5479589e7ba3
+[debug] [2020-09-19T14:47:26.828Z] [uploadQueue] Retrying task 41f7c3ad3409f3e4af02e065a5b9845d06b3f7f1c3a3184a4cce6ca1148733f1
+[debug] [2020-09-19T14:47:26.830Z] [uploadQueue] Retrying task adcf8ae91038c0482b693290f86db3d41ced960de8e73c356af4b583d652df45
+[debug] [2020-09-19T14:47:26.840Z] [uploadQueue] Retrying task 149843b87dbb63a3682f57a06df3938a7406be9fc207f870e3b56284373f2621
+[debug] [2020-09-19T14:47:28.562Z] [uploadQueue] Retrying task 4ba8467413d4a37940180fb64fafc14a352da12d06015a41deff13042f19c46e
+[debug] [2020-09-19T14:47:29.447Z] [uploadQueue] Retrying task 4fc560f0ae87a09f6679f0d4291dc05f2688fceb323571d710a624938b272fd3
+[debug] [2020-09-19T14:47:30.394Z] [uploadQueue] Retrying task b1f3d4eaffa3a21bb4683b4b3e494ba76c820a78da6f471e2d66521999fbbb40
+[debug] [2020-09-19T14:47:32.847Z] [uploadQueue] Retrying task 08790bfe335b942a2402e34ae0d2969f6fba38f8a21cd64d0f21ecdd74f58246
+[debug] [2020-09-19T14:47:34.937Z] [uploadQueue] Retrying task ec979690e001e0393bfe2557ba089c70c1e3104eb184d2e15f4515686c3b6441
+[debug] [2020-09-19T14:47:37.482Z] [uploadQueue] Retrying task 287d79b9a24d78e9102717531f2704445900143f755ab869f9654f2233be62c2
+[debug] [2020-09-19T14:47:42.423Z] [uploadQueue] Retrying task 933b1e6a79736c6b5cef6242c16c61bc6af90ddef4412a75c16afd070680df24
+[debug] [2020-09-19T14:47:42.558Z] [uploadQueue] Retrying task 20ec74e626fc05b756806a102bad201a3093099297cbabd32bfc069ee075a26e
+[debug] [2020-09-19T14:47:45.519Z] [uploadQueue] Retrying task e855df00608ea22c67703c801167d590e441cdec506014f387361fb574df2eb2
+[debug] [2020-09-19T14:47:46.085Z] [uploadQueue] Retrying task 50e148fecf2f2fee2d5b1b122a44db0804bab8b7be86c43c35d8b6510f254725
+[debug] [2020-09-19T14:47:47.182Z] [uploadQueue] Retrying task 8ba4751ec4ee4864e0fd79b43719617f9e909a332462ed1df92382d7a4c52390
+[debug] [2020-09-19T14:47:50.524Z] [uploadQueue] Retrying task 05f0f10d1389f285f40774bedaa9a100d14da0926e1b010b7160c9311bb9ec49
+[debug] [2020-09-19T14:47:51.091Z] [uploadQueue] Retrying task b2a332761c335ab0311b4132bc42d84f499b6961fd1882a3cd8f5bebf47c9ebb
+[debug] [2020-09-19T14:47:56.326Z] [uploadQueue] Retrying task dda3cfaab0349c0c4d4a15415d380e1ac25686f263312c4958e4a86d0f6fdbcd
+[debug] [2020-09-19T14:47:59.121Z] [uploadQueue] Retrying task 287d79b9a24d78e9102717531f2704445900143f755ab869f9654f2233be62c2
+[debug] [2020-09-19T14:47:59.581Z] [uploadQueue] Retrying task 892ae9e4c859ceb03d93891e3b369f6eb3aa63a081eeeb0a594c34b38b3e75eb
+[debug] [2020-09-19T14:48:01.924Z] [uploadQueue] Retrying task 12577eea28dc40de81d9b9687864fa999c675c0b2987674b5ec22404b7747a08
+[debug] [2020-09-19T14:48:03.816Z] [uploadQueue] Retrying task e855df00608ea22c67703c801167d590e441cdec506014f387361fb574df2eb2
+[debug] [2020-09-19T14:48:14.139Z] [uploadQueue] Retrying task 05f0f10d1389f285f40774bedaa9a100d14da0926e1b010b7160c9311bb9ec49
+[debug] [2020-09-19T14:48:15.730Z] [uploadQueue] Retrying task e458dd15ac1f16e15e7adb94f370642dd662e6c64c77aaf082ad9da0ffd8f36f
+[debug] [2020-09-19T14:48:15.746Z] [uploadQueue] Retrying task d50a4a993a163bb812e5103e19bad4aca22772c12e983eb4cec342af0fb42470
+[debug] [2020-09-19T14:48:15.762Z] [uploadQueue] Retrying task 3f69a87ea353450a95aac3732a8a9a6ac3128635aa99f44d191b4b70a56ba84f
+[debug] [2020-09-19T14:48:15.782Z] [uploadQueue] Retrying task c07d7df4155648305426f03d65f191f1b10d361d260a1508d9aee7a23ad876ef
+[debug] [2020-09-19T14:48:15.794Z] [uploadQueue] Retrying task ac35d6cf7d46287bd8c47861cc0ace62bf58723ad9860781a6659164d68f6140
+[debug] [2020-09-19T14:48:15.843Z] [uploadQueue] Retrying task 1a63ad8aaa622a7ced9447208f53b55e73a2b79c590f1e66a3222af6b0c7b03f
+[debug] [2020-09-19T14:48:16.160Z] [uploadQueue] Retrying task a167a36ef463487d09f9d459cce3f42ee180812ea2838f732088c65f8199d6d3
+[debug] [2020-09-19T14:48:16.176Z] [uploadQueue] Retrying task 3b2f97b6c77d946cd8e371f2323eab1d43fbfb812e0501a5567ae355bb243222
+[debug] [2020-09-19T14:48:17.743Z] [uploadQueue] Retrying task 4ba8467413d4a37940180fb64fafc14a352da12d06015a41deff13042f19c46e
+[debug] [2020-09-19T14:48:19.043Z] [uploadQueue] Retrying task 149843b87dbb63a3682f57a06df3938a7406be9fc207f870e3b56284373f2621
+[debug] [2020-09-19T14:48:24.801Z] [uploadQueue] Retrying task 38d88317bebc79b4945a679daadd47daebbadc5cd13b41473143394ca7e8d892
+[debug] [2020-09-19T14:48:37.665Z] [uploadQueue] Retrying task 1a63ad8aaa622a7ced9447208f53b55e73a2b79c590f1e66a3222af6b0c7b03f
+[debug] [2020-09-19T14:48:37.669Z] [uploadQueue] Retrying task e458dd15ac1f16e15e7adb94f370642dd662e6c64c77aaf082ad9da0ffd8f36f
+[debug] [2020-09-19T14:48:37.672Z] [uploadQueue] Retrying task c07d7df4155648305426f03d65f191f1b10d361d260a1508d9aee7a23ad876ef
+[debug] [2020-09-19T14:48:37.691Z] [uploadQueue] Retrying task a167a36ef463487d09f9d459cce3f42ee180812ea2838f732088c65f8199d6d3
+[debug] [2020-09-19T14:48:37.705Z] [uploadQueue] Retrying task d50a4a993a163bb812e5103e19bad4aca22772c12e983eb4cec342af0fb42470
+[debug] [2020-09-19T14:48:37.707Z] [uploadQueue] Retrying task ac35d6cf7d46287bd8c47861cc0ace62bf58723ad9860781a6659164d68f6140
+[debug] [2020-09-19T14:48:37.725Z] [uploadQueue] Retrying task 3f69a87ea353450a95aac3732a8a9a6ac3128635aa99f44d191b4b70a56ba84f
+[debug] [2020-09-19T14:48:37.875Z] [uploadQueue] Retrying task 3b2f97b6c77d946cd8e371f2323eab1d43fbfb812e0501a5567ae355bb243222
+[debug] [2020-09-19T14:48:43.861Z] [uploadQueue] Retrying task c75fb0c9bd9a8549b6fae15b9dbb01ce3cd801e1fa6d5505859c042ee8be7f76
+[debug] [2020-09-19T14:48:45.475Z] [uploadQueue] Retrying task 149843b87dbb63a3682f57a06df3938a7406be9fc207f870e3b56284373f2621
+[debug] [2020-09-19T14:48:45.932Z] [uploadQueue] Retrying task 594c3916e70c1bb0da59ffca25acd686013593da9cfad9c1af700a9eaa810141
+[debug] [2020-09-19T14:48:46.241Z] [uploadQueue] Retrying task 9b74ca5333a9ca156ae6ef0920d5bc42d283e95d25651bf4375404f0407a63ab
+[debug] [2020-09-19T14:48:46.871Z] [uploadQueue] Retrying task eabf37574b2515b432f0119a166df43f92e4be6eee7a1142204577984c7cd269
+[debug] [2020-09-19T14:48:48.337Z] [uploadQueue] Retrying task 4ba8467413d4a37940180fb64fafc14a352da12d06015a41deff13042f19c46e
+[debug] [2020-09-19T14:48:49.193Z] [uploadQueue] Retrying task 08790bfe335b942a2402e34ae0d2969f6fba38f8a21cd64d0f21ecdd74f58246
+[debug] [2020-09-19T14:48:49.313Z] [uploadQueue] Retrying task c67e043a67be12578b10c9742f67149a3c04fba44365ee887d052383ed7b15b9
+[debug] [2020-09-19T14:48:49.314Z] [uploadQueue] Retrying task 151d3e94c24cadf06995694cabdfa6fade6c327397316f218cb72ba2b3f78cbd
+[debug] [2020-09-19T14:48:51.435Z] [uploadQueue] Retrying task a99c81beea584d291235b130f2a93639dc212badb0afa1ec2a8038a0884dd879
+[debug] [2020-09-19T14:48:56.077Z] [uploadQueue] Retrying task b51c2c79cce89b7c5947672c13f735c24ee1a9f8f6ebdb957c5fdfe567f27d37
+[debug] [2020-09-19T14:48:59.461Z] [uploadQueue] Retrying task b1f3d4eaffa3a21bb4683b4b3e494ba76c820a78da6f471e2d66521999fbbb40
+[debug] [2020-09-19T14:49:05.104Z] [uploadQueue] Retrying task 1a63ad8aaa622a7ced9447208f53b55e73a2b79c590f1e66a3222af6b0c7b03f
+[debug] [2020-09-19T14:49:05.106Z] [uploadQueue] Retrying task c07d7df4155648305426f03d65f191f1b10d361d260a1508d9aee7a23ad876ef
+[debug] [2020-09-19T14:49:05.109Z] [uploadQueue] Retrying task e458dd15ac1f16e15e7adb94f370642dd662e6c64c77aaf082ad9da0ffd8f36f
+[debug] [2020-09-19T14:49:05.110Z] [uploadQueue] Retrying task a167a36ef463487d09f9d459cce3f42ee180812ea2838f732088c65f8199d6d3
+[debug] [2020-09-19T14:49:05.127Z] [uploadQueue] Retrying task d50a4a993a163bb812e5103e19bad4aca22772c12e983eb4cec342af0fb42470
+[debug] [2020-09-19T14:49:05.136Z] [uploadQueue] Retrying task ac35d6cf7d46287bd8c47861cc0ace62bf58723ad9860781a6659164d68f6140
+[debug] [2020-09-19T14:49:05.139Z] [uploadQueue] Retrying task 3f69a87ea353450a95aac3732a8a9a6ac3128635aa99f44d191b4b70a56ba84f
+[debug] [2020-09-19T14:49:05.296Z] [uploadQueue] Retrying task 3b2f97b6c77d946cd8e371f2323eab1d43fbfb812e0501a5567ae355bb243222
+[debug] [2020-09-19T14:49:08.658Z] [uploadQueue] Retrying task dda3cfaab0349c0c4d4a15415d380e1ac25686f263312c4958e4a86d0f6fdbcd
+[debug] [2020-09-19T14:49:09.141Z] [uploadQueue] Retrying task 8ba4751ec4ee4864e0fd79b43719617f9e909a332462ed1df92382d7a4c52390
+[debug] [2020-09-19T14:49:13.850Z] [uploadQueue] Retrying task b2a332761c335ab0311b4132bc42d84f499b6961fd1882a3cd8f5bebf47c9ebb
+[debug] [2020-09-19T14:49:14.280Z] [uploadQueue] Retrying task e855df00608ea22c67703c801167d590e441cdec506014f387361fb574df2eb2
+[debug] [2020-09-19T14:49:19.559Z] [uploadQueue] Retrying task 38d88317bebc79b4945a679daadd47daebbadc5cd13b41473143394ca7e8d892
+[debug] [2020-09-19T14:49:26.501Z] [uploadQueue] Retrying task bccea8e3047fe57867850b3fde69457875e06a5891aa90a0118a5479589e7ba3
+[debug] [2020-09-19T14:49:35.430Z] [uploadQueue] Retrying task 4fc560f0ae87a09f6679f0d4291dc05f2688fceb323571d710a624938b272fd3
+[debug] [2020-09-19T14:49:46.905Z] FirebaseError: Task 149843b87dbb63a3682f57a06df3938a7406be9fc207f870e3b56284373f2621 failed: retries exhausted after 6 attempts
+[debug] [2020-09-19T14:49:46.906Z] [hosting][upload queue][FINAL] {"max":115522,"min":3035,"avg":35965.65,"active":33,"complete":41,"success":40,"errored":1,"retried":141,"total":74,"elapsed":213973}
+[debug] [2020-09-19T14:49:47.881Z] FirebaseError: Task 4ba8467413d4a37940180fb64fafc14a352da12d06015a41deff13042f19c46e failed: retries exhausted after 6 attempts
+[debug] [2020-09-19T14:49:49.698Z] [uploadQueue] Retrying task 12577eea28dc40de81d9b9687864fa999c675c0b2987674b5ec22404b7747a08
+[debug] [2020-09-19T14:49:55.920Z] FirebaseError: Task e458dd15ac1f16e15e7adb94f370642dd662e6c64c77aaf082ad9da0ffd8f36f failed: retries exhausted after 6 attempts
+[debug] [2020-09-19T14:49:55.940Z] FirebaseError: Task 3f69a87ea353450a95aac3732a8a9a6ac3128635aa99f44d191b4b70a56ba84f failed: retries exhausted after 6 attempts
+[debug] [2020-09-19T14:49:55.941Z] FirebaseError: Task 1a63ad8aaa622a7ced9447208f53b55e73a2b79c590f1e66a3222af6b0c7b03f failed: retries exhausted after 6 attempts
+[debug] [2020-09-19T14:49:55.942Z] FirebaseError: Task c07d7df4155648305426f03d65f191f1b10d361d260a1508d9aee7a23ad876ef failed: retries exhausted after 6 attempts
+[debug] [2020-09-19T14:49:55.943Z] FirebaseError: Task 3b2f97b6c77d946cd8e371f2323eab1d43fbfb812e0501a5567ae355bb243222 failed: retries exhausted after 6 attempts
+[debug] [2020-09-19T14:49:55.943Z] FirebaseError: Task ac35d6cf7d46287bd8c47861cc0ace62bf58723ad9860781a6659164d68f6140 failed: retries exhausted after 6 attempts
+[debug] [2020-09-19T14:49:57.377Z] [uploadQueue] Retrying task bccea8e3047fe57867850b3fde69457875e06a5891aa90a0118a5479589e7ba3
+[debug] [2020-09-19T14:50:39.608Z] ----------------------------------------------------------------------
+[debug] [2020-09-19T14:50:39.610Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\abdul\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-09-19T14:50:39.611Z] CLI Version:   8.10.0
+[debug] [2020-09-19T14:50:39.611Z] Platform:      win32
+[debug] [2020-09-19T14:50:39.611Z] Node Version:  v12.18.2
+[debug] [2020-09-19T14:50:39.612Z] Time:          Sat Sep 19 2020 18:50:39 GMT+0400 (Azerbaijan Standard Time)
+[debug] [2020-09-19T14:50:39.613Z] ----------------------------------------------------------------------
+[debug] [2020-09-19T14:50:39.613Z] 
+[debug] [2020-09-19T14:50:39.620Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-19T14:50:39.621Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\abdul\Desktop\Projects\Angular\nape
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using golden-52327. 
+[debug] [2020-09-19T14:50:43.629Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/golden-52327  
+ 
+[debug] [2020-09-19T14:50:44.385Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Sep 2020 14:50:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

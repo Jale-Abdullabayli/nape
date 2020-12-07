@@ -1,0 +1,75 @@
+header {
+    background-color: #EDEDED;
+    padding: 20px 0;
+}
+
+header a {
+    color: gray;
+    text-decoration: none;
+}
+
+header img {
+    margin: 0 0 2px 5px;
+}
+
+header h5 {
+    font-weight: bold;
+}
+
+.services-top {
+    margin: 20px auto;
+    width: 45%;
+    position: relative;
+    text-align: center;
+}
+
+.services-top h3 {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.services-top h3:after {
+    display: block;
+    content: "";
+    background-color: gray;
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.services-top h3:before {
+    display: block;
+    content: "";
+    background-color: gray;
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+
+/*media queries*/
+
+@media (max-width:1200px) {
+    .services-top h3:after,
+    .services-top h3:before {
+        width: 50px;
+    }
+}
+
+@media (max-width:992px) {
+    .services-top h3:after,
+    .services-top h3:before {
+        width: 20px;
+    }
+}
+
+.row img {
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin-bottom: 50px;
+}

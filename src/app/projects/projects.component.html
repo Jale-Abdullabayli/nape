@@ -1,0 +1,33 @@
+<header>
+    <div class="container">
+        <a href="#" routerLink="/home">HOMEPAGE</a>
+        <img src="../../assets/img/doublearrow.png" alt="arrow">
+        <h5>PROJECTS</h5>
+    </div>
+</header>
+<div class="container">
+    <div class="projects-top">
+        <h3>PROJECTS</h3>
+    </div>
+
+    <router-outlet></router-outlet>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="arrow prev disableArrow">
+                <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+            </li>
+            <li class="page-item activeLink" routerLink="/projects/project1">1
+            </li>
+            <li class="page-item" routerLink="/projects/project2">2
+            </li>
+            <li class="page-item" routerLink="/projects/project1">3
+            </li>
+            <li class="page-item" routerLink="/projects/project2">4
+            </li>
+            <li class="arrow next">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+
+            </li>
+        </ul>
+    </nav>

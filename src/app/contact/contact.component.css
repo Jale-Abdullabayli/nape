@@ -1,0 +1,152 @@
+header {
+    background-color: #EDEDED;
+    padding: 20px 0;
+}
+
+header a {
+    color: gray;
+    text-decoration: none;
+}
+
+header img {
+    margin: 0 0 2px 5px;
+}
+
+header h5 {
+    font-weight: bold;
+}
+
+.contact-top {
+    margin: 30px auto;
+    width: 45%;
+    position: relative;
+    text-align: center;
+}
+
+.contact-top h3 {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.contact-top h3:after {
+    display: block;
+    content: "";
+    background-color: gray;
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.contact-top h3:before {
+    display: block;
+    content: "";
+    background-color: gray;
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+form input,
+form textarea {
+    background-color: #EEF5F1;
+    margin-top: 10px;
+}
+
+form textarea:focus,
+form input:focus {
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #0F7834;
+}
+
+button {
+    background-color: #318B51;
+    width: 35%;
+    color: white;
+    margin: 20px auto 50px auto;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #0F7834;
+}
+
+.tel {
+    position: relative;
+    height: 30px;
+}
+
+.tel .phone,
+.tel .whatsApp {
+    position: absolute;
+}
+
+.tel .phone {
+    left: 0;
+}
+
+.tel .whatsApp {
+    right: 0;
+}
+
+.contact-row div:last-child .container {
+    background-color: #E8E8E8;
+    height: 380px;
+    margin-bottom: 50px;
+}
+
+.contact-row .contactImg {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.contact-row .contactImg img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.map {
+    height: 400px;
+    width: 100%;
+}
+
+.map iframe {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*media queries*/
+
+@media (max-width:1200px) {
+    .contact-top h3:after,
+    .contact-top h3:before {
+        width: 50px;
+    }
+}
+
+@media (max-width:992px) {
+    .contact-top h3:after,
+    .contact-top h3:before {
+        width: 20px;
+    }
+}
+
+@media (min-width:768px) {
+    .tel {
+        width: 70%;
+    }
+}

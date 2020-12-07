@@ -1,0 +1,285 @@
+/*carousel*/
+
+.carousel {
+    width: 100%;
+    position: relative;
+}
+
+.carousel .overLay {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 1) 1%, transparent 99%);
+}
+
+.carousel img {
+    background-size: cover;
+    animation: zoomAnimation 10s forwards;
+}
+
+@keyframes zoomAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.carousel .content {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: white;
+    left: 0;
+    width: 100%;
+}
+
+.content h3,
+.content h6 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+}
+
+.content h3 {
+    clip-path: polygon(0 0, 97% 0, 100% 100%, 0 100%);
+    border-radius: 0 50px 10px 0;
+    animation: textAnimation 2s forwards;
+    padding: 10px 30px 10px 100px;
+    width: fit-content;
+}
+
+.content h6 {
+    clip-path: polygon(0 0, 100% 0, 97% 100%, 0 100%);
+    padding: 10px 30px 10px 100px;
+    border-radius: 0 10px 30px 0;
+    display: inline-block;
+    animation: textAnimation 2s forwards;
+}
+
+@keyframes textAnimation {
+    from {
+        transform: translate(-100%, 0);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+
+/*services*/
+
+.services {
+    background-color: #F7F7F9;
+    color: #777777;
+    padding-top: 50px;
+}
+
+.services-row div {
+    background-color: white;
+    padding: 20px 50px;
+    border-right: 5px solid #F7F7F9;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.services-row div:hover {
+    background-color: #0F7834;
+    color: white;
+}
+
+.services-row div:hover i {
+    color: white;
+}
+
+.services-row div i {
+    display: block;
+    color: #0F7834;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+
+/*works*/
+
+.works {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/img/slide-main.jpg');
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.works .overLay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    clip-path: ellipse(50% 10% at 50% 0%);
+    background-color: #F7F7F9;
+}
+
+.works .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.works .content p {
+    color: lightgray;
+}
+
+.works .content button {
+    color: white;
+    position: relative;
+}
+
+.works .content button,
+.projects button,
+.products .text-center button {
+    border-radius: 0;
+    margin-top: 30px;
+    padding: 10px 50px;
+    box-shadow: none;
+}
+
+.works button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-right-color: white;
+    border-top-color: white;
+}
+
+.works button:hover::after {
+    animation: BtnAnimation 2s forwards;
+}
+
+@keyframes BtnAnimation {
+    50% {
+        height: 0;
+        width: 100%;
+        border-right-color: transparent;
+        border-top-color: white;
+    }
+    100% {
+        height: 0;
+        width: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+    }
+}
+
+.works button::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-left-color: white;
+    border-bottom-color: white;
+}
+
+.works button:hover::before {
+    animation: BtnAnimation2 2s forwards;
+}
+
+@keyframes BtnAnimation2 {
+    50% {
+        height: 0;
+        width: 100%;
+        border-left-color: transparent;
+        border-bottom-color: white;
+    }
+    100% {
+        height: 0;
+        width: 0;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+    }
+}
+
+
+/*contact*/
+
+.contact {
+    padding: 10px 0;
+    border-bottom: 5px solid #2BB673;
+    background-color: #EDEFF1;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact .info {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+}
+
+.contact p {
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.contact .message {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact button {
+    background-color: #27A468;
+    color: white;
+    padding: 10px 30px;
+}
+
+.contact button:hover {
+    background-color: #00934C;
+    color: white;
+}
+
+
+/*media queries*/
+
+@media (max-width:576px) {
+    .carousel h6 {
+        display: none;
+    }
+    .services-row {
+        padding: 0 50px;
+    }
+    .works button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:768px) {
+    .carousel h3 {
+        font-size: 20px;
+    }
+    .carousel h6 {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:768px) {
+    .contact button {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}

@@ -1,0 +1,109 @@
+footer {
+    background-color: #30353A;
+    padding: 20px 0 10px 0;
+}
+
+footer .logo {
+    height: 50px;
+    position: relative;
+}
+
+footer .row div:last-child {
+    height: 20px;
+}
+
+footer .logo img {
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-size: cover;
+}
+
+footer ul {
+    color: white;
+    font-size: 12px;
+    list-style-type: none;
+    text-align: center;
+}
+
+footer li {
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+footer li:before {
+    margin-right: 2px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-image: url('../../assets/img/arrow.png');
+    background-size: cover;
+}
+
+footer li:hover {
+    border-color: #27A468;
+}
+
+footer .accounts {
+    position: absolute;
+    display: inline-block;
+}
+
+footer .accounts i:hover {
+    background-color: #B5B7B8;
+}
+
+footer .accounts i {
+    background-color: #EFEFEF;
+    color: #777777;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+footer hr {
+    background-color: gray;
+}
+
+footer .copyRight {
+    color: white;
+    text-align: center;
+}
+
+
+/*media queries*/
+
+@media (max-width:992px) {
+    footer {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width:1200px) {
+    footer li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width:992px) {
+    footer .logo img {
+        left: 0;
+    }
+    footer .accounts {
+        right: 0;
+    }
+}
+
+@media (max-width:992px) {
+    footer .row div {
+        margin-bottom: 20px;
+    }
+    footer .logo img,
+    footer .accounts {
+        left: 50%;
+        transform: translate(-25%, 0);
+    }
+}

@@ -1,0 +1,88 @@
+header {
+    background-color: #EDEDED;
+    padding: 20px 0;
+}
+
+header a {
+    color: gray;
+    text-decoration: none;
+}
+
+header img {
+    margin: 0 0 2px 5px;
+}
+
+header h5 {
+    font-weight: bold;
+}
+
+.page-item,
+.arrow {
+    cursor: pointer;
+    border-radius: 50%;
+    color: white;
+    background-color: #06732F;
+    margin-right: 5px;
+    box-shadow: none;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+.projects-top {
+    margin: 20px auto;
+    width: 45%;
+    position: relative;
+    text-align: center;
+}
+
+.projects-top h3 {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.projects-top h3:after {
+    display: block;
+    content: "";
+    background-color: gray;
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.projects-top h3:before {
+    display: block;
+    content: "";
+    background-color: gray;
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.activeLink,
+.disableArrow {
+    background-color: #F0F0F0 !important;
+    pointer-events: none;
+    color: gray !important;
+}
+
+
+/*media queries*/
+
+@media (max-width:1200px) {
+    .projects-top h3:after,
+    .projects-top h3:before {
+        width: 50px;
+    }
+}
+
+@media (max-width:992px) {
+    .projects-top h3:after,
+    .projects-top h3:before {
+        width: 20px;
+    }
+}

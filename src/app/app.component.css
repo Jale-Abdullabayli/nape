@@ -1,0 +1,26 @@
+.whatsApp {
+    background-color: #0DC143;
+    height: 60px;
+    display: none;
+}
+
+.whatsApp a {
+    color: white;
+    height: 50px;
+    width: 100vw;
+    display: block;
+    padding: 15px;
+}
+
+.whatsApp a i {
+    margin-right: 10px;
+}
+
+
+/*media queries*/
+
+@media (max-width:992px) {
+    .whatsApp {
+        display: block;
+    }
+}

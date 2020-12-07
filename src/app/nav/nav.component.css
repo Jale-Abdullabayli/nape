@@ -1,0 +1,168 @@
+header {
+    height: 100px;
+}
+
+header .logo {
+    height: 100px;
+    max-width: 100%;
+    background-size: 100% 100%;
+}
+
+header .container div,
+header .tel {
+    display: inline-block;
+}
+
+header select {
+    border: 3px solid #0F7834;
+    border-radius: 20px;
+    padding: 2px 5px;
+    margin-left: 30px;
+    color: #0F7834;
+}
+
+header select:hover {
+    background-color: #0F7834;
+    color: white;
+}
+
+.header-right {
+    margin-top: 20px;
+}
+
+.account {
+    margin-left: 100px;
+}
+
+.account i {
+    background-color: #EFEFEF;
+    color: #777777;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.account i:hover {
+    color: #999999;
+}
+
+header .call img {
+    margin-right: 20px;
+}
+
+header .call a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header .call h6 {
+    font-size: 10px;
+    color: #999999;
+}
+
+
+/*navbar*/
+
+.navbar {
+    background-color: #F5F7FA;
+    border-bottom: 5px solid #0B9E42;
+}
+
+.nav-link {
+    font-weight: bold;
+    color: black;
+}
+
+.navbar .navbar-toggler i {
+    color: #0F7834;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+    color: #0B9E42;
+}
+
+.nav-item .dropdown-menu {
+    display: none;
+    background-color: #F5F7FA;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    width: 500px;
+    height: 150px;
+    position: relative;
+    padding: 20px;
+}
+
+.dropdown-menu img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 90%;
+    width: 50%;
+    border-right: 15px solid #E9E9E9;
+    border-left: 15px solid #E9E9E9;
+    background-color: #fff;
+    padding: 0;
+    margin: 5px;
+}
+
+.dropdown-menu a {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu a::before {
+    content: '';
+    position: absolute;
+    background: url('../../assets/img/next.png') no-repeat;
+    width: 15px;
+    height: 15px;
+    left: 5px;
+    top: 7px;
+}
+
+.lang img {
+    width: 25px;
+    height: 25px;
+}
+
+.lang a {
+    background-color: #EFEFEF;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.lang a:hover {
+    opacity: 0.8;
+}
+
+.nav-footer {
+    display: none;
+}
+
+
+/*media queries*/
+
+@media (max-width:576px) {
+    .dropdown-menu img {
+        display: none;
+    }
+    .dropdown-menu {
+        width: auto;
+    }
+}
+
+@media (max-width:992px) {
+    header .account,
+    header select {
+        display: none !important;
+    }
+    .nav-footer {
+        display: block;
+    }
+}
